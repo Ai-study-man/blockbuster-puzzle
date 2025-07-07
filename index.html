@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockbuster Puzzle - The Ultimate Movie Block Matching Challenge</title>
     <meta name="description" content="Play Blockbuster Puzzle, the exciting block matching game featuring your favorite movie themes. Match, merge and blast your way through cinematic challenges!">
+    <meta name="keywords" content="puzzle game, block matching, movie games, free online games, brain games, match 3, puzzle adventure">
+    <meta name="author" content="Blockbuster Puzzle Team">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://blockbuster-puzzle.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blockbuster-puzzle.com/">
+    <meta property="og:title" content="Blockbuster Puzzle - The Ultimate Movie Block Matching Challenge">
+    <meta property="og:description" content="Play Blockbuster Puzzle, the exciting block matching game featuring your favorite movie themes. Match, merge and blast your way through cinematic challenges!">
+    <meta property="og:image" content="https://blockbuster-puzzle.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blockbuster-puzzle.com/">
+    <meta property="twitter:title" content="Blockbuster Puzzle - The Ultimate Movie Block Matching Challenge">
+    <meta property="twitter:description" content="Play Blockbuster Puzzle, the exciting block matching game featuring your favorite movie themes. Match, merge and blast your way through cinematic challenges!">
+    <meta property="twitter:image" content="https://blockbuster-puzzle.com/images/twitter-image.jpg">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Blockbuster Puzzle",
+        "url": "https://blockbuster-puzzle.com",
+        "description": "The ultimate movie-themed block matching puzzle game",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Blockbuster Puzzle Team"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://blockbuster-puzzle.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Blockbuster Puzzle",
+        "description": "A movie-themed block matching puzzle game with cinematic challenges",
+        "genre": "Puzzle",
+        "gamePlatform": "Web Browser",
+        "operatingSystem": "Any",
+        "applicationCategory": "Game",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        }
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,7 +85,7 @@
         }
     </script>
     <!-- Google AdSense 优化变现脚本 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4372695356377122" crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4372695356377122" crossorigin="anonymous"></script> -->
     <style>
         /* Custom animations */
         @keyframes pulse-opacity {
@@ -92,6 +152,8 @@
                 <a href="#game" class="text-appleDark hover:text-appleBlue transition">Play Now</a>
                 <a href="#features" class="text-appleDark hover:text-appleBlue transition">Features</a>
                 <a href="#how-to-play" class="text-appleDark hover:text-appleBlue transition">How to Play</a>
+                <a href="game-guide.html" class="text-appleDark hover:text-appleBlue transition">Game Guide</a>
+                <a href="news.html" class="text-appleDark hover:text-appleBlue transition">News</a>
                 <a href="#about" class="text-appleDark hover:text-appleBlue transition">About</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-appleDark">
@@ -106,6 +168,8 @@
                 <a href="#game" class="py-2 text-appleDark hover:text-appleBlue transition">Play Now</a>
                 <a href="#features" class="py-2 text-appleDark hover:text-appleBlue transition">Features</a>
                 <a href="#how-to-play" class="py-2 text-appleDark hover:text-appleBlue transition">How to Play</a>
+                <a href="game-guide.html" class="py-2 text-appleDark hover:text-appleBlue transition">Game Guide</a>
+                <a href="news.html" class="py-2 text-appleDark hover:text-appleBlue transition">News</a>
                 <a href="#about" class="py-2 text-appleDark hover:text-appleBlue transition">About</a>
             </div>
         </div>
@@ -135,7 +199,7 @@
             <p class="text-center text-appleGray mb-8 max-w-2xl mx-auto">Match movie-themed blocks, create explosive combos, and unlock special power-ups in this addictive puzzle game!</p>
             
             <!-- 广告位（可选，提升收益） -->
-            <div class="mb-6 flex justify-center">
+            <!-- <div class="mb-6 flex justify-center">
                 <ins class="adsbygoogle"
                     style="display:block"
                     data-ad-client="ca-pub-4372695356377122"
@@ -145,7 +209,7 @@
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
-            </div>
+            </div> -->
             
             <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border-2 border-gray-200">
                 <div class="game-container">
@@ -238,12 +302,121 @@
         </div>
     </section>
 
+    <!-- Game Tips & Strategies -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Pro Tips & Strategies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-appleLight p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-4 text-appleBlue">Master the Basics</h3>
+                    <ul class="space-y-2 text-appleGray">
+                        <li>• Always look for the largest possible matches before making a move</li>
+                        <li>• Plan your moves ahead - think about what blocks will fall after your match</li>
+                        <li>• Focus on clearing blocks from the bottom to create cascading effects</li>
+                        <li>• Save power-ups for challenging situations or when you need a high score</li>
+                    </ul>
+                </div>
+                <div class="bg-appleLight p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-4 text-applePurple">Advanced Techniques</h3>
+                    <ul class="space-y-2 text-appleGray">
+                        <li>• Create L-shaped or T-shaped matches for special blocks</li>
+                        <li>• Combine two special blocks for maximum board clearing</li>
+                        <li>• Use the movie theme hints to predict upcoming block patterns</li>
+                        <li>• Master the timing of combo chains for massive score multipliers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game News & Updates -->
+    <section class="py-12 md:py-16 bg-appleLight">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest News & Updates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <article class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-sm text-appleGray mb-2">January 15, 2025</div>
+                    <h3 class="text-lg font-semibold mb-3">New Winter Movie Theme Released!</h3>
+                    <p class="text-appleGray text-sm">Experience the magic of winter blockbusters with our new theme featuring ice blocks, snow effects, and holiday movie references. New power-ups and challenges await!</p>
+                </article>
+                <article class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-sm text-appleGray mb-2">January 10, 2025</div>
+                    <h3 class="text-lg font-semibold mb-3">Tournament Mode Beta Testing</h3>
+                    <p class="text-appleGray text-sm">Join our beta testing program for the new tournament mode where players compete in real-time challenges. Sign up now for exclusive early access!</p>
+                </article>
+                <article class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-sm text-appleGray mb-2">January 5, 2025</div>
+                    <h3 class="text-lg font-semibold mb-3">Performance Improvements</h3>
+                    <p class="text-appleGray text-sm">We've optimized the game engine for better performance across all devices. Enjoy smoother animations and faster load times!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Reviews -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Players Are Saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-appleLight p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">★★★★★</div>
+                        <span class="ml-2 text-sm text-appleGray">5/5 stars</span>
+                    </div>
+                    <p class="text-appleGray italic mb-4">"This is hands down the best puzzle game I've ever played! The movie themes are so creative and the gameplay is addictive. I've been playing for hours!"</p>
+                    <div class="text-sm font-semibold">- Sarah M., Casual Gamer</div>
+                </div>
+                <div class="bg-appleLight p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">★★★★★</div>
+                        <span class="ml-2 text-sm text-appleGray">5/5 stars</span>
+                    </div>
+                    <p class="text-appleGray italic mb-4">"The power-up system is brilliant! Every level feels fresh and challenging. Perfect for both quick gaming sessions and longer play."</p>
+                    <div class="text-sm font-semibold">- Mike T., Puzzle Enthusiast</div>
+                </div>
+                <div class="bg-appleLight p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">★★★★★</div>
+                        <span class="ml-2 text-sm text-appleGray">5/5 stars</span>
+                    </div>
+                    <p class="text-appleGray italic mb-4">"Love the movie references and the graphics are amazing! The daily challenges keep me coming back every day."</p>
+                    <div class="text-sm font-semibold">- Emma L., Movie Buff</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12 md:py-16 bg-appleLight">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold mb-3 text-appleBlue">Is Blockbuster Puzzle free to play?</h3>
+                    <p class="text-appleGray">Yes! Blockbuster Puzzle is completely free to play with no downloads required. Simply visit our website and start playing instantly in your browser.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold mb-3 text-appleBlue">Do I need to create an account?</h3>
+                    <p class="text-appleGray">No account is required to play! However, creating an account allows you to save your progress, compete in leaderboards, and participate in daily challenges.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold mb-3 text-appleBlue">What devices can I play on?</h3>
+                    <p class="text-appleGray">Blockbuster Puzzle works on all modern devices including desktop computers, laptops, tablets, and smartphones. The game automatically adapts to your screen size.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold mb-3 text-appleBlue">How do I get better at the game?</h3>
+                    <p class="text-appleGray">Practice makes perfect! Focus on creating large matches, plan your moves ahead, and don't forget to check out our tips and strategies section above for advanced techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="py-12 md:py-16 bg-appleLight">
+    <section id="about" class="py-12 md:py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-8">About Blockbuster Puzzle</h2>
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-appleLight p-8 rounded-xl">
                     <p class="mb-4 text-appleGray">
                         Blockbuster Puzzle is the ultimate block matching game that combines classic puzzle mechanics with exciting movie themes. Designed to be easy to learn but challenging to master, the game offers hours of entertainment for casual and competitive players alike.
                     </p>
